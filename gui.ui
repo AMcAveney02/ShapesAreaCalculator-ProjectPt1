@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Math Functions</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>601</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <widget class="QTabWidget" name="tab_selector">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="widget">
+      <attribute name="title">
+       <string>Power</string>
+      </attribute>
+      <widget class="QLabel" name="power_label">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>361</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <pointsize>22</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculates Exponents</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="power_label_2">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>70</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enter the Base:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="power_base_input">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>100</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="power_label_3">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>140</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enter the Power:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="power_power_inpuit">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>170</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="power_computeButton">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>220</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Compute</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="power_answer_label">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>290</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>The answer is...</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="power_answer_display">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>330</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nirmala UI Semilight</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="circle_tab">
+      <attribute name="title">
+       <string>Circle</string>
+      </attribute>
+      <widget class="QLabel" name="circle_label1">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>431</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <pointsize>22</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculates Area of a Circle</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="circle_label2">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>90</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enter Radius:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="circle_input">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>120</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="circle_computeButton">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>170</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Compute</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="circle_answer_label">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>250</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>The answer is...</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="circle_answer_display">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>300</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nirmala UI Semilight</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="rectangle_tab">
+      <attribute name="title">
+       <string>Rectangle</string>
+      </attribute>
+      <widget class="QLabel" name="rectangle_label">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>501</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <pointsize>22</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculates Area of a Rectangle</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="rectangle_label_2">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>80</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enter Length:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="rectangle_length_input">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>120</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="rectangle_computeButton">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>250</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Compute</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="rectangle_answer_label">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>330</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>The answer is...</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="rectangle_answer_display">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>380</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nirmala UI Semilight</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="rectangle_label_3">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>160</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enter Width:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="rectangle_width_input">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>200</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>601</width>
+         <height>531</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/calcbackground/blue background bigger.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <zorder>label_6</zorder>
+      <zorder>rectangle_label</zorder>
+      <zorder>rectangle_label_2</zorder>
+      <zorder>rectangle_length_input</zorder>
+      <zorder>rectangle_computeButton</zorder>
+      <zorder>rectangle_answer_label</zorder>
+      <zorder>rectangle_answer_display</zorder>
+      <zorder>rectangle_label_3</zorder>
+      <zorder>rectangle_width_input</zorder>
+     </widget>
+     <widget class="QWidget" name="square_tab">
+      <attribute name="title">
+       <string>Square</string>
+      </attribute>
+      <widget class="QLabel" name="square_label">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>451</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <pointsize>22</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculates Area of a Square</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="square_label_2">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>80</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enter Side Length:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="square_input">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>110</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="square_computeButton">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>160</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Compute</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="square_answer_label">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>240</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>The answer is...</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="square_answer_display">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>280</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nirmala UI Semilight</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="triangle_tab">
+      <attribute name="title">
+       <string>Triangle</string>
+      </attribute>
+      <widget class="QLabel" name="triangle_label">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>471</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <pointsize>22</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculates Area of a Triangle</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="triangle_label_2">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>80</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enter Base Length:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="triangle_base_input">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>110</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="triangle_label_3">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>150</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enter Height Length:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="triangle_height_input">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>190</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="triangle_computeButton">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>240</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lato Semibold</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Compute</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="triangle_answer_label">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>310</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>The answer is...</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="triangle_answer_display">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>350</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nirmala UI Semilight</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
