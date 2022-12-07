@@ -6,7 +6,7 @@ class TestFunctions(unittest.TestCase):
 
     delta_value = 0.0000001 # sets the delta value to save time typing out the decimal
 
-    def test_circle(self):
+    def test_circle(self) -> None:
         """
         Function to test the output of the area_of_circle function with multiple types of inputs
         :return: All tests passed with no run time errors, meaning the computation functions are working as they should be
@@ -29,7 +29,7 @@ class TestFunctions(unittest.TestCase):
         self.assertRaises(ValueError, area_of_circle, -2327)
 
 
-    def test_rectangle(self):
+    def test_rectangle(self) -> None:
         """
         Function to test the output of the area_of_rectangle function with multiple types of inputs
         :return: All tests passed with no run time errors, meaning the computation functions are working as they should be
@@ -51,7 +51,7 @@ class TestFunctions(unittest.TestCase):
         self.assertRaises(TypeError, area_of_rectangle, 'ewrwf', 2)
         self.assertRaises(TypeError, area_of_rectangle, 23, 'Yes')
 
-    def test_square(self):
+    def test_square(self) -> None:
         """
         Function to test the output of the area_of_square function with multiple types of inputs
         :return: All tests passed with no run time errors, meaning the computation functions are working as they should be
@@ -73,7 +73,7 @@ class TestFunctions(unittest.TestCase):
         self.assertRaises(ValueError, area_of_square, -865.23)
         self.assertRaises(ValueError, area_of_square, -987.2312132)
 
-    def test_triangle(self):
+    def test_triangle(self) -> None:
         """
         Function to test the output of the area_of_triangle function with multiple types of inputs
         :return: All tests passed with no run time errors, meaning the computation functions are working as they should be
@@ -98,7 +98,7 @@ class TestFunctions(unittest.TestCase):
         self.assertRaises(ValueError, area_of_triangle, 45, -7.54)
         self.assertRaises(ValueError, area_of_triangle, -38973, -4.789)
 
-    def test_power(self):
+    def test_power(self) -> None:
         """
         Function to test the output of the power_of_number function with multiple types of inputs
         :return: All tests passed with no run time errors, meaning the computation functions are working as they should be
